@@ -18,12 +18,8 @@ module.exports = {
         loader: 'style-loader!css-loader'
       },
       {
-        test: /\.png$/,
-        loader: 'url-loader?limit=100000&minetype=image/png'
-      },
-      {
-        test: /\.jpg/,
-        loader: 'file-loader'
+        test: /\.(jpg|pdf|png)$/,
+        loader: 'file-loader?name=[path][name].[ext]'
       },
       {
         test : /\.jsx?/,
@@ -37,7 +33,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('development')
     })
   ]
 };

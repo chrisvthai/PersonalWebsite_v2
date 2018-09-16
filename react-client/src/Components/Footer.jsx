@@ -81,22 +81,21 @@ class Footer extends Component {
 			<div>
 			<div name='Frameworks' align='right' style={{transform: 'translateX(-15px)'}}>
 				<div style={{display: 'inline-block', position: 'relative', top: '-15px'}}>
-					<Typography variant='body2'>
+					<Typography variant='caption'>
 						Made with 
 					</Typography>
 				</div>
 				<div style={{display: 'inline-block', padding: '0px'}}>
-					<img src={reactLogo} style={iconStyle} />
-					<img src={matuiLogo} style={iconStyle2} />
-					<img src={nodejsLogo} style={iconStyle3} />
+					<a href='https://reactjs.org/' target='_blank'><img src={reactLogo} style={iconStyle} /></a>
+					<a href='https://material-ui.com/' target='_blank'><img src={matuiLogo} style={iconStyle2} /></a>
 				</div>
 			</div>
 			<footer style={footerStyle}>
 				<div name='SocialMedia' align='center'>
 					<IconButton 
 						style={{width: '80px', height: '80px', padding:'0px', margin: '5px'}}
-						href="https://www.facebook.com/cthaifood"
-						target="_blank" 
+						href='https://www.facebook.com/cthaifood'
+						target='_blank' 
 						>
 						<MediaIcon name={fbDir} />
 					</IconButton>
@@ -109,8 +108,8 @@ class Footer extends Component {
 					</IconButton>
 					<IconButton 
 						style={{width: '80px', height: '80px', padding:'0px', margin: '5px'}}
-						href="https://www.linkedin.com/in/christopher-van-thai/"
-						target="_blank"
+						href='https://www.linkedin.com/in/christopher-van-thai/'
+						target='_blank'
 						>
 						<MediaIcon name={lkDir} />
 					</IconButton>				

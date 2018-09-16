@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
-import img from './formalprofpic.jpg';
 
 const imgStyle = {
 	width: '105px',
@@ -24,10 +23,17 @@ const bannerStyle = {
 
 
 class HomePage extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			photoURL: '../../../public/formalprofpic.jpg',
+		}
+	}
+
 	render() {
 		return (
 			<div align="center" style={bannerStyle}>
-				<img src={img} style={imgStyle}/>
+				<img src={this.state.photoURL} style={imgStyle}/>
 				<div style={{display: 'inline-block'}}>
 					<Typography variant='display3'>
 						Christopher Thai
