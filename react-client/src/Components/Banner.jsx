@@ -39,7 +39,7 @@ class HomePage extends Component {
 						Christopher Thai
 					</Typography>
 					<Typography variant='subheading'>
-						Software Developer // Musician // Instructor // Avid PC Gamer
+						Software Developer // Musician // Mentor
 					</Typography>
 				</div>
 			</div>

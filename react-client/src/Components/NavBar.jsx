@@ -42,7 +42,7 @@ class NavBar extends Component {
 						<Tab value='/about' label="About" component={Link} to='/about' />
 						<Tab value='/work' label="My Work" component={Link} to='/work' />
 						<Tab value='/projects' label="My Projects" component={Link} to='/projects' />
-						<Tab value='/forfun' label="For Fun" />
+						<Tab value='/forfun' label="For Fun" component={Link} to='/forfun' />
 					</Tabs>
 				</AppBar>
 			</div>

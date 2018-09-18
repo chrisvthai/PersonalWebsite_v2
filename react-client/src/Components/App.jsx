@@ -8,6 +8,7 @@ import Banner from './Banner.jsx';
 import About from './About.jsx';
 import Work from './Work/Work.jsx';
 import Projects from './Projects/Projects.jsx';
+import ForFun from './ForFun.jsx';
 
 import './styles.css'
 
@@ -25,6 +26,7 @@ class App extends Component {
 							<Route path="/about" component={About} />
 							<Route path="/work" component={Work} />
 							<Route path="/projects" component={Projects} />
+							<Route path="/forfun" component={ForFun} />
 						</Switch>
 					</div>
 					<Footer />

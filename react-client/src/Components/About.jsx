@@ -7,7 +7,7 @@ import pdfFile from '../../../public/Resume.pdf'
 import { Link } from 'react-router-dom';
 
 const textstyles = {
-	width: '500px',
+	width: '600px',
 	textAlign: 'left',
 	margin: '0 auto',
 	marginTop: '30px',
@@ -53,19 +53,7 @@ class About extends React.Component {
 						resume <a href={pdfFile} target="_blank">here</a>, or by browsing my different projects!
 					</Typography>
 				</div>
-				<Route path={match.url + '/testcell'} component={TestCell}/>
-				<Link to={match.url + '/testcell'}> Link to TestCell </Link>
-				<div> You are now at {location.pathname} </div>
-				<div> The matched url is {match.url} </div>
 			</div>
-		)
-	}
-}
-
-class TestCell extends React.Component {
-	render() {
-		return (
-			<div> This is a TestCell! </div>
 		)
 	}
 }
