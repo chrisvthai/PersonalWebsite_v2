@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 const reactLogo = require('./logos/react.png');
 const matuiLogo = require('./logos/matui.png');
 const nodejsLogo = require('./logos/nodejs.png');
+const reactrouteLogo = require('./logos/reactrouter.png');
 
 const footerStyle = {
 	backgroundColor: '#6f6f70',
@@ -29,7 +30,7 @@ const iconStyle2 = {
 };
 
 const iconStyle3 = {
-	width: '65px',
+	width: '50px',
 	height: '40px',
 	padding: '1px',
 	marginLeft: '10px',
@@ -88,6 +89,7 @@ class Footer extends Component {
 				<div style={{display: 'inline-block', padding: '0px'}}>
 					<a href='https://reactjs.org/' target='_blank'><img src={reactLogo} style={iconStyle} /></a>
 					<a href='https://material-ui.com/' target='_blank'><img src={matuiLogo} style={iconStyle2} /></a>
+					<a href='https://reacttraining.com/react-router/' target='_blank'><img src={reactrouteLogo} style={iconStyle3} /></a>
 				</div>
 			</div>
 			<footer style={footerStyle}>

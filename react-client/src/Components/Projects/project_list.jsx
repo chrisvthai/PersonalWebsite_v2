@@ -100,7 +100,7 @@ const website = {
 								modern Javascript! It features an unhealthy amount of inline CSS styling, but hey, I'm still extremely happy with the result considering I'd never done this before!`,
 	imgPath: websiteImg,
 	links: [
-		{}
+		{ name: 'Github repo', link: 'https://github.com/chrisvthai/PersonalWebsite_v2'}
 	]
 }
 
