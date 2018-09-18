@@ -4,7 +4,7 @@ import riverfrontImg from './images/riverfront.png';
 import catbotImg from './images/catbot.png';
 import pianoImg from './images/piano.png';
 import treelineImg from './images/treeline.png';
-import websiteImg from './images/website.png';
+import websiteImg from './images/website.jpg';
 
 /* List of projects */
 /* All images should be 250px wide*/
