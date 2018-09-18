@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Chris Thai's updated personal website, made with React if everything goes as planned",
   "main": "index.js",
+  "engines" : {
+    "node": "6.10.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack -d --watch",
