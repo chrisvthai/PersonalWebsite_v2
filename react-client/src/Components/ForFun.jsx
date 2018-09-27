@@ -6,15 +6,18 @@ import { Link } from 'react-router-dom';
 
 import irisPDF from '../../../public/iris_fullscore.pdf';
 import coffeePDF from '../../../public/darkcoffee_fullscore.pdf';
+import megamanPDF from '../../../public/megaman_fullscore.pdf';
 
 import irisIMG from './logos/layton.png';
 import aceIMG from './logos/aceattorney.png';
+import megamanIMG from './logos/smash.jpg';
 
 import irisMP3 from '../../../public/iris.mp3';
 import coffeeMP3 from '../../../public/darkcoffee.mp3';
+import megamanMP3 from '../../../public/megaman.mp3';
 
 const textstyles = {
-	width: '600px',
+	width: '70%',
 	textAlign: 'left',
 	margin: '0 auto',
 	marginTop: '30px',
@@ -41,6 +44,14 @@ const music = [
 		pdf: coffeePDF,
 		img: aceIMG,
 		mp3: coffeeMP3,
+	},
+	{
+		title: 'Megaman 2 Medley - Super Smash Bros Wii U',
+		googdr: 'https://drive.google.com/open?id=1ew5EvIRUFdKm1T6UZixKJWmLhcTYfSDi',
+		yt: 'https://www.youtube.com/watch?v=U3VdGw0YmUc',
+		pdf: megamanPDF,
+		img: megamanIMG,
+		mp3: megamanMP3,
 	}
 ]
 
@@ -49,7 +60,6 @@ class ForFun extends Component {
 		return (
 			<div>
 				<div style={textstyles}>
-					
 					<div>
 						<Typography variant="title" align="center" style={{marginBottom: '15px'}}>
 							I occasionally arrange music!
@@ -80,24 +90,18 @@ class Music extends Component {
 				<Typography variant="body2" align="left">
 					{this.props.song.title}
 				</Typography>
-				<div style={{display: 'table', width: '100%', margin: '10px'}}>
-					<div style={{width: '50%', display: 'table-row'}}>
-						<div style={{ display: 'table-cell', float: 'left'}}>
-							<Typography variant="body1" align="left">
-								<ul>
-									<li>Full Score <a href={this.props.song.pdf} target="_blank">here</a></li>
-									<li>Google Drive <a href={this.props.song.googdr} target="_blank">here</a></li>
-									<li>Youtube Link <a href={this.props.song.yt} target="_blank">here</a></li>
-									<li>Sample audio: </li>
-
-								</ul>
-							</Typography>
-						</div>
-						<div style={{display: 'table-cell'}}>
-							<img src={this.props.song.img} style={{ borderRadius: '5px'}}/>
-						</div>
-					</div>
-					<audio controls style={{marginTop: '10px', }}><source src={this.props.song.mp3} type='audio/mpeg' /></audio>
+				<div style={{display: 'table', width: '90%', margin: '10px'}}>
+					<Typography variant="body1" align="left">
+						<ul>
+							<li>Full Score <a href={this.props.song.pdf} target="_blank">here</a></li>
+							<li>Google Drive <a href={this.props.song.googdr} target="_blank">here</a></li>
+							<li>Youtube Link <a href={this.props.song.yt} target="_blank">here</a></li>
+						</ul>
+					</Typography>
+				</div>	
+				<img src={this.props.song.img} style={{ borderRadius: '5px', maxWidth: '50%', transform: 'translateX(40px)'}}/>		
+				<div style={{clear:'both', margin: '15px'}}>
+					<audio controls style={{transform: 'translateX(-20px)'}}><source src={this.props.song.mp3} type='audio/mpeg' /></audio>
 				</div>
 			</div>
 		)

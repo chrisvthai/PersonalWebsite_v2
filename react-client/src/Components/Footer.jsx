@@ -79,7 +79,7 @@ const lkDir = `M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471   c0
 class Footer extends Component {
 	render() {
 		return (
-			<div>
+			<div style={{marginTop: '15px'}}>
 			<div name='Frameworks' align='right' style={{transform: 'translateX(-15px)'}}>
 				<div style={{display: 'inline-block', position: 'relative', top: '-15px'}}>
 					<Typography variant='caption'>

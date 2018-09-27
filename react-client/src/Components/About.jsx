@@ -7,7 +7,7 @@ import pdfFile from '../../../public/Resume.pdf'
 import { Link } from 'react-router-dom';
 
 const textstyles = {
-	width: '600px',
+	width: '60%',
 	textAlign: 'left',
 	margin: '0 auto',
 	marginTop: '30px',

@@ -6,7 +6,7 @@ import { Route, Link, BrowserRouter, Switch } from 'react-router-dom';
 import list from './project_list.jsx';
 
 const textstyles = {
-	width: '50%',
+	width: '80%',
 	textAlign: 'left',
 	margin: '0 auto',
 	marginTop: '30px',
@@ -17,14 +17,13 @@ const imgStyle = {
 	float: 'left',
 	marginRight: '20px',
 	marginBottom: '10px',
-	maxWidth: '100%',
-	minWidth: '150px',
+	maxWidth: '90%',
 	height: 'auto',
 	borderRadius: '15px',
 }
 
 const gridStyles = {
-	width: '60%',
+	width: '85%',
 	textAlign: 'left',
 	margin: '0 auto',
 	marginTop: '10px',
@@ -55,7 +54,7 @@ class Projects extends Component {
 class ProjectGrid extends Component {
 	render() {
 		return (
-			<div>
+			<div style={{width: '100%', margin: '0 auto'}}>
 			<div style={textstyles}>
 				<Typography variant='body2' align='center'>
 					Listed below are some of the projects that I have worked on in the past. Come check them out!
@@ -83,7 +82,7 @@ class ProjectCard extends Component {
 
 	render() {
 		return (
-			<div>
+			<div >
 				<Typography variant="body2" align="center" style={dividerStyles}> &#9679; &emsp; &#9679; &emsp; &#9679;</Typography>
 				<div style={{textAlign: 'left', margin: '0 auto',}}>
 				<div style={{maxWidth: '40%'}}>
@@ -97,9 +96,11 @@ class ProjectCard extends Component {
 					<Typography variant='body2' align='left' style={{marginBottom: '20px'}}>
 						{this.props.project.description}
 					</Typography>
-
+				 
+				</div>
+				<div style={{overflow: 'auto'}}>
 					{this.props.project.links.map((obj) =>
-						<Typography variant='body2' align='left'>{obj.name}: <a href={obj.link} target="_blank">{obj.link}</a></Typography>
+						<Typography variant='body2' align='left'>{obj.name}: <a href={obj.link} target="_blank" >{obj.link}</a></Typography>
 					)}
 				</div>
 				</div>

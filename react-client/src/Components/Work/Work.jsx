@@ -5,7 +5,7 @@ import { withRouter } from 'react-router'
 import list from './work_list.jsx'
 
 const textstyles = {
-	width: '75%',
+	width: '80%',
 	margin: '0 auto',
 	marginTop: '30px',
 }
