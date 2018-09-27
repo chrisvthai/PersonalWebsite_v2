@@ -100,8 +100,8 @@ class Music extends Component {
 					</Typography>
 				</div>	
 				<img src={this.props.song.img} style={{ borderRadius: '5px', maxWidth: '50%', transform: 'translateX(40px)'}}/>		
-				<div style={{clear:'both', margin: '15px'}}>
-					<audio controls style={{ transform: 'scale(0.75)'}}><source src={this.props.song.mp3} type='audio/mpeg' /></audio>
+				<div style={{clear:'both', marginTop: '15px', marginBot: '15px'}}>
+					<audio controls style={{transform: 'translateX(-40px)', transform: 'scale(0.75)'}}><source src={this.props.song.mp3} type='audio/mpeg' /></audio>
 				</div>
 			</div>
 		)
